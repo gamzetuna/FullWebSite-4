@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/75787b2e4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fullwebsite4.css"> 
+    <script src="jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="ustbar">
+            <div id="iletisim">
+                <div id="phoneMail">
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        e-mail |
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        0555 555 55 55 | X-Store </a>
+                </div>
+                <div id="sosyalmedya">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-square"></i>
+                        facebook |
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        instagram |
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                        YouTube
+                    </a>
+                </div>
+        </div>
+        <div id="xblog">
+            <h1>My X-Blog</h1>
+            <p>Farklı bir X-Blog deneyimi için hazır mısınız?</p>
+        </div>
+        <nav>
+            <div id="menubar">
+                <a href="#">Anasayfa</a>
+                <a href="#">Hakkımızda</a>
+                <a href="#">Ürünler</a>
+                <a href="#">İletişim</a>
+            </div>
+            <input id="aramabutonu" type="text" value="Ara ki bulasın..." />
+        </nav>
+        <section>
+        <div id="info">
+            <div id="yazar">
+                <h1>Yazar Hakkında</h1>
+                <p>Aşağıdaki yazar için</p>
+                <img src="images/astronot.jpg" style="height:200px; width:auto ;border-radius: 100px; margin-right:10%; margin-left: 5%;" />
+                <p>What is Lorem Ipsum?</p>
+            <div>
+                <h1>Kaynaklar</h1>
+                <div id="kaynaklar">
+                    <input type="checkbox" id="myCheck" onclick="myFunction()">
+                    <label for="myCheck" id="Parent">Parent</label>
+                    <div id="text" style="display: none;">
+                    <li style="list-style: none;margin-left: 40px;">Image-1</li>
+                    <li style="list-style: none;margin-left: 40px;">Image-2</li>
+                    <div >
+                    <li style="list-style:none;margin-left: 20px;"><input type="checkbox" id="mycheck2" onclick="myFunction2()">
+                    <label for="myCheck">Child</label></li>
+                    <div id="text2" style="display: none;" >
+                        <li style="list-style: none;margin-left: 70px;">Image-3</li>
+                        <li style="list-style: none;margin-left: 70px;">Image-4</li> 
+                        <li style="list-style:none;margin-left: 70px;"> <input type="checkbox" id="mycheck3" onclick="myFunction3()">
+                        <label for="myCheck">SubChild</label></li>
+                    </div>
+                        <div id="text3" style="display: none;">
+                            <li style="list-style: none;margin-left: 110px;">Image-5</li>
+                            <li style="list-style: none;margin-left: 110px;">Image-6</li>
+                            <li style="list-style: none;margin-left: 110px;">Image-7</li>
+                            <li style="list-style: none;margin-left: 110px;">Image-8</li>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div> 
+        
+        <div id="notlar"> Panel
+            <p> Yönetici Paneli</p>
+            <div id="sablon">
+                <div id="sablonbar">
+                    <a  onclick="not1()">Notlar1</a>
+                    <a  onclick="not2()">Notlar2</a>
+                    <a  onclick="not3()">Notlar3</a>
+                    <a onclick="not4()">Notlar4</a>
+                </div>
+                <div id="not1" class="caticerik">
+                    <!-- READ LESS -->
+                    <h1>Tatilden Notlar 1</h1>
+                    <img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+                    style="border-radius:10px;height: 300px; width:100%;"/>
+                    <p>What is Lorem Ipsum?</p>
+                    <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının 
+                        bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı 
+                        sahte metinler olarak<span id="dots">...</span><span id="more"> kullanılmıştır.Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden
+                         elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması 
+                        ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları 
+                        ile popüler olmuştur.</span></p>
+                        <a  onclick="readmore()" id="myBtn">Read more</a>
+                </div>
+                <div id="not2">
+                    <h1>Tatilden Notlar 2</h1>
+                    <img src="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                     style="border-radius:10px;height: 300px; width:100%;"/>
+                     <br>
+                    <p>What is Lorem Ipsum?</p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil doloremque doloribus dolor facere, sint nulla neque. ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque autem laboriosam nemo? </p>
+                </div>
+                <div id="not3">
+                    <h1>Tatilden Notlar 3</h1>
+                    <img src="https://images.pexels.com/photos/4319752/pexels-photo-4319752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+                    style="border-radius:10px;height: 300px; width:100%;"/>
+                    <br>
+                    <p>What is Lorem Ipsum?</p>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus similique reiciendis
+                         unde hic qui, nostrum atque est illo voluptatibus quis molestiae tempore quos, blanditiis nisi minima itaque autem laboriosam nemo? </p>
+                </div>
+                <div id="not4">
+                    <h1>Tatilden Notlar 4</h1>
+                    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                     style="border-radius:10px;height: 300px; width:100%;"/>
+                    <p>Tatilden akılda kalnlardan bir demet...</p>
+                    <br>
+                    <p>Download Monalisa</p>
+                    <br>
+                    <!-- RESİM iNDİRME -->
+                    <a href="images/a.jpg" download>
+                        <img src="images/a.jpg" alt="W3Schools" width="90" height="100">
+                      </a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <a class="yukaricik">Top</a>
+        <footer> <h1>Footer</h1></footer>
+<script>
+        // Top Buton İçin 
+
+var yukari = document.getElementsByClassName("yukaricik")[0];
+
+window.addEventListener("scroll",function(){
+    const mesafe = window.scrollY;// Y eksenin de olan değişiklik için bir işlem yapması gerekiyor. 
+    if(mesafe>300)
+    {
+        yukari.classList.add("goster");
+         behavior= "smooth"; 
+    }
+    else{
+        yukari.classList.remove("goster");
+    }
+
+});
+yukari.addEventListener('click',function(){
+window.scrollTo(0,0); // scrollTo ile tıklandığında nereye gitmesini istiyorsam konum verdim. 
+});
+
+function not1(){
+    $('#not1').css("display","block");
+    $('#not2').css("display","none");
+    $('#not3').css("display","none");
+    $('#not4').css("display","none");
+}
+function not2(){
+    $('#not1').css("display","none");
+    $('#not2').css("display","block");
+    $('#not3').css("display","none");
+    $('#not4').css("display","none");
+}
+function not3(){
+    $('#not1').css("display","none");
+    $('#not2').css("display","none");
+    $('#not3').css("display","block");
+    $('#not4').css("display","none");
+}
+function not4(){
+    $('#not1').css("display","none");
+    $('#not2').css("display","none");
+    $('#not3').css("display","none");
+    $('#not4').css("display","block");
+}
+function readmore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.style.color="red"
+    btnText.innerHTML = "Read more";
+    
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    btnText.style.color="purple"
+    moreText.style.display = "inline";
+  }
+}
+
+// Checkbox için 
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+    
+  }
+}
+function myFunction2() {
+  var checkBox = document.getElementById("mycheck2");
+  var text2 = document.getElementById("text2");
+  if (checkBox.checked == true){
+    text2.style.display ="block"
+  } else {
+     text2.style.display = "none";
+    
+  }
+}
+function myFunction3() {
+  var checkBox = document.getElementById("mycheck3");
+  var text3 = document.getElementById("text3");
+  if (checkBox.checked == true){
+    text3.style.display ="block"
+  } else {
+     text3.style.display = "none";
+    
+  }
+}
+
+</script>
+</body>
+</html>

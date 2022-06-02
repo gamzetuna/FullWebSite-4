@@ -1,0 +1,255 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    #main{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #iletisim {
+        width: auto;
+        height: 45px;
+        display: flex;
+        background-color:aqua;
+        justify-content: space-between;           
+    }
+    #phoneMail{
+        width: 350px;
+        height: 25px;
+        padding: 10px;
+    }
+        #phoneMail > a {
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 100;
+            color: black;
+        }
+
+        #phoneMail > a:hover {
+                color: white;
+            }
+
+    #sosyalmedya {
+        padding: 10px;
+        height: 25px;
+    }
+
+        #sosyalmedya > a {
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 100;
+            color: black;
+            right: 5px;
+        }
+
+            #sosyalmedya > a:hover {
+                color: white;
+            }
+    #xblog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 500px;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+    }
+    nav {
+        display: flex;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+    }
+    #menubar {
+        width: 70%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+
+        #menubar > a {
+            text-decoration: none;
+            height: 50px;
+            padding-right: 15px;
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            color: white;
+            
+        }
+
+            #menubar > a:hover {
+                color: black;
+                background-color: lightgray;
+            }
+
+    #aramabutonu {
+        height: 50px;
+        width: 428px;
+        margin-right: 10px;   
+        border: 2px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+section{
+    display: flex;
+}
+#yazar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#info {
+    width: 30%;
+    flex-basis: 370px;
+    background-color: lightgrey;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+    h1{
+                font-weight:bold;
+                font-size: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+    #notlar{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 810px;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        font-size: 30px;
+
+        }
+        #notlar>p{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        #sablon{
+            border: 2px solid gray;
+            height: 650px;
+            width: 800px;
+        }
+        #sablonbar{
+           width: auto;
+           height: 40px;
+           background-color:rgb(149, 152, 154);
+           font-size: 15px;
+           padding: 10px;      
+           border-bottom: 2px solid lightgray;    
+        }
+        #sablonbar > a{
+            padding: 10px 15px;
+            color: navy;
+            font-weight: normal;
+            text-align: center;
+            width: 100px;
+           
+        }
+        #sablonbar > a:hover{
+            background-color: gray;
+            cursor: pointer;
+            color: orange;
+       
+        }
+        #not1{
+            padding: 10px;
+           font-size: 10px;
+           
+        }
+        #myBtn{
+            text-decoration: underline;
+        }
+        #myBtn:hover{
+            cursor: pointer;
+        }
+        #not2{
+            display: none;
+            padding: 10px;
+            font-size: 10px;
+        }
+        #not3{
+            display: none;
+            padding: 10px;
+            font-size: 10px;
+        }
+        #not4{
+            display: none;
+            padding: 10px;
+            font-size: 10px;
+        }
+        #more {
+            display: none;
+        }
+        footer{
+            width: auto;
+            height: 70px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight:bold;
+            font-size: 20px;
+        }
+        .yukaricik{
+            display:none;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+        .yukaricik:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+        .goster{
+            display:block;
+        }
+        #kaynaklar{
+            font-size: 12px;
+            padding: 0px;
+        }
+        #kaynaklar:hover{
+            cursor: pointer;
+        }
+    
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+        
+            50% {
+                background-position: 100% 50%;
+            }
+        
+            100% {
+                background-position: 0% 50%;
+            }  
+        }
+        
+    
